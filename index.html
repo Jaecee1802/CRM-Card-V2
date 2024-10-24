@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM</title>
+    <link rel="stylesheet" href="designs/card-design.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Righteous&display=swap" rel="stylesheet">
+    <style>
+        .soc-logo{
+            height: 4vh;
+        }
+        .insta, .steam, .github{
+            display: flex;
+            justify-content: center;
+            gap: 5%;
+            margin-top: 2vh;
+            border: 1px solid c;
+            background-color: rgb(32, 32, 32);
+            border-radius: 20px;
+            max-width: 80vw;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 2.5vh 6vw 2.5vh 6vw;
+            transition: 0.5s;
+        }
+
+        .insta:hover, .steam:hover, .github:hover, a:hover{
+            background-color: whitesmoke;
+            color: rgb(32, 32, 32);
+        }
+
+        a{
+            text-decoration: none;
+            color: white;
+        }
+
+        #ig, #stm, #git{
+            font-size: clamp(1.1rem, 1.3vw, 1.8rem);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="crm-card-info" id="card-crm">
+            <h1 id="crm-username" class="crm-font">Name of the User</h1>
+            <p id="social">Socials:</p>
+            <div class="socials">
+                <a href="#">
+                    <div class="insta">
+                        <img src="images/instagram.png" alt="Instagram" class="soc-logo">
+                        <h2 id="ig">Social Media #1</h2>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="steam">
+                        <img src="images/steam.png" alt="Steam" class="soc-logo">
+                        <h2 id="stm">Social Media #2</h2>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="github">
+                        <img src="images/github.png" alt="Github" class="soc-logo">
+                        <h2 id="git">Social Media #3</h2>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="script/script.js"></script>
+</body>
+</html>
