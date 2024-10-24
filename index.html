@@ -29,6 +29,7 @@
         .insta:hover, .steam:hover, .github:hover, a:hover{
             background-color: whitesmoke;
             color: rgb(32, 32, 32);
+            padding: 3vh 7vw 3vh 7vw;
         }
 
         a{
@@ -39,6 +40,10 @@
         #ig, #stm, #git{
             font-size: clamp(1.1rem, 1.3vw, 1.8rem);
         }
+
+        audio::-webkit-media-controls {
+            display: none;
+        }
     </style>
 </head>
 <body>
@@ -47,21 +52,21 @@
             <h1 id="crm-username" class="crm-font">Name of the User</h1>
             <p id="social">Socials:</p>
             <div class="socials">
-                <a href="#">
+                <a href="https://www.instagram.com/jco.crim" target="_blank">
                     <div class="insta">
                         <img src="images/instagram.png" alt="Instagram" class="soc-logo">
                         <h2 id="ig">Social Media #1</h2>
                     </div>
                 </a>
 
-                <a href="#">
+                <a href="https://steamcommunity.com/id/rc8crim/" target="_blank">
                     <div class="steam">
                         <img src="images/steam.png" alt="Steam" class="soc-logo">
                         <h2 id="stm">Social Media #2</h2>
                     </div>
                 </a>
 
-                <a href="#">
+                <a href="https://github.com/Jaecee1802" target="_blank">
                     <div class="github">
                         <img src="images/github.png" alt="Github" class="soc-logo">
                         <h2 id="git">Social Media #3</h2>
@@ -71,7 +76,7 @@
             </div>
         </div>
     </div>
-
+    <audio hidden controls autoplay loop src="audio/The Weeknd, Playboi Carti - Timeless (INSTRUMENTAL) BEST ON YOUTUBE.mp3"></audio>
     <script src="script/script.js"></script>
 </body>
 </html>
